@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP OR LOGIN</title>
+    <link rel="stylesheet" href="css/styles2.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">PERNIC.</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">HOME</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="about-page">ABOUT</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="contactus-page">CONTACT US</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="shop.html" class="navbar__links" id="shop-page">SHOP</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">LOG IN</a>
+                </li>
+            </ul>
+        </div> 
+    </nav>
+    <div class="main">
+        <div class="container">
+            <h1 class="label">LOGIN</h1>
+            <form class="login_form" action="successreg.html" method="post" name="form" onsubmit="return validated()">
+                <div class="font">Email or Phone</div>
+                <input type="text" name="">
+                <div id="email_error">Email must end with '@gmail.com</div>
+                <div class="font font2">Password</div>
+                <input type="password" name="">
+                <div id="pass_error">Password must be at least 6 digits.</div>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer__container">
+        <div class="footer__logo">
+            <a href="/" id="footer__logo">Pernic</a>
+        </div>
+        <p class="website__rights">© PERNIC 2020. All rights reserved</p>
+        </section>
+    </div>
+
+    <script src="valid.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
